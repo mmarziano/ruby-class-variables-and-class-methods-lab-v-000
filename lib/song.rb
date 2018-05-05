@@ -33,9 +33,7 @@ end
   end 
 
   def self.artist_count
-    @@artists.each do |i|
-      @@artist_count[i] += 1 
-    end
+    @@artists.each_with_object(Hash.new(0)) { |o, h| h[o] += 1 }
   end 
   
   

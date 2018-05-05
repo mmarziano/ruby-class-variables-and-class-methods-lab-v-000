@@ -23,8 +23,7 @@ class Song
 end
   
   def self.artists
-    artists = []
-    artists << self
+    @@artist
   end
   
 end

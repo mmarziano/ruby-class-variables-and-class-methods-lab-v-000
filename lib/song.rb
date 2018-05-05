@@ -28,8 +28,9 @@ end
     @@artists.uniq
   end
   
-  def self.genre_count@@
-    genre_count[i] += 1 
+  def self.genre_count
+    @@genres.each do |i|
+      genre_count[i] += 1 
     end
   end 
 

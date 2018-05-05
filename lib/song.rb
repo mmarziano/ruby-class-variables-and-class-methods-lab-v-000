@@ -31,8 +31,6 @@ end
     @@genres.each do |i|
       genre_count[i] += 1 
     end
-      
-      
   end 
 
   def self.artist_count

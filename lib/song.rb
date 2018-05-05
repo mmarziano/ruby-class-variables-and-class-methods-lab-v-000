@@ -29,8 +29,8 @@ end
   end
   
   def self.genre_count
-    @@genres.each do |i|
-      @@genre_count[i] + 1
+    @@genres.each do |genre|
+      @@genre_count[genre] += 1
     end
   end 
 

@@ -29,9 +29,7 @@ end
   end
   
   def self.genre_count
-    @@genres.each do |genre|
-      @@genre_count[genre] += 1
-    end
+    @@genres.each_with_object(@@genre_count) { |o, h| h[o] += 1 }
   end 
 
   def self.artist_count

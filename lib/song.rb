@@ -28,10 +28,8 @@ end
     @@artists.uniq
   end
   
-  def self.genre_count
-    genre_count = Hash.new
-    @@genres.each do |i|
-      genre_count[i] += 1 
+  def self.genre_count@@
+    genre_count[i] += 1 
     end
   end 
 

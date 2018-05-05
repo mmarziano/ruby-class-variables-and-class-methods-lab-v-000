@@ -34,8 +34,10 @@ end
     end
   end 
 
-  def self.artist_count
-    
+  def artist_count
+    @@artists.each do |i|
+      @@artist_count[i] += 1 
+    end
   end 
   
   
